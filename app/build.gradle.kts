@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -25,7 +26,8 @@ android {
 
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/AL2.0"
+            excludes += "/META-INF/LGPL2.1"
         }
     }
 }
@@ -35,7 +37,6 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.10.1")
 
     implementation(platform("androidx.compose:compose-bom:2025.01.01"))
-
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
