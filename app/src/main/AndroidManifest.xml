@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:label="Nunu Kumba Hospital"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NunuKumbaHospital">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
 
         <activity
             android:name=".MainActivity"
